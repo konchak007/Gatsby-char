@@ -1,11 +1,13 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import { GlobalStyle } from "../theme/global-style";
+
+import Header from "./Header/Header";
 
 const Layout = () => {
   return (
     <>
+      <Header />
       <GlobalStyle />
     </>
   );
