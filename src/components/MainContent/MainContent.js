@@ -11,7 +11,7 @@ const MainContent = () => (
   <main>
     <Wrapper>
       <FirstSection />
-      <FirstSection />
+      <FirstSection reverse />
       <FirstSection />
       <SecondSection />
     </Wrapper>

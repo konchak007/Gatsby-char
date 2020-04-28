@@ -5,7 +5,7 @@ import assistingWoman from "../../../images/woman-assisting-patient-in-wheelchai
 
 const MainBlock = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   text-align: left;
 
   margin: 58px 0;
@@ -22,8 +22,8 @@ const Paragraph = styled.div`
 const ParagraphText = styled.p`
   margin-top: 45px;
 `;
-const FirstSection = () => (
-  <MainBlock>
+const FirstSection = ({ reverse }) => (
+  <MainBlock reverse={reverse}>
     <div>
       <img src={assistingWoman} width="650px" />
     </div>

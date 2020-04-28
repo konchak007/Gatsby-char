@@ -5,12 +5,13 @@ const ButtonCover = styled.button`
   text-transform: uppercase;
   display: flex;
   font-weight: bold;
-  border: solid 2px;
   outline: none;
   cursor: pointer;
   padding: 7.5px 30px;
-  background-color: ${(props) => (props.blueType ? "blue" : "transparent")};
   margin-left: 25px;
+  background-color: ${(props) => (props.type ? "#3E7DFE" : "transparent")};
+  color: ${(props) => (props.type ? "white" : "black")};
+  border: solid 2px ${(props) => (props.type ? "#3E7DFE" : "black")};
 `;
 
 const Button = ({ text, blueType }) => (
