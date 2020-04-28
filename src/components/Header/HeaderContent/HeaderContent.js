@@ -12,6 +12,7 @@ const Tagline = styled.div`
 const MainTitle = styled.h1`
   width: 700px;
   line-height: 79px;
+  margin: 0 auto;
 `;
 
 const Wrapper = styled.div`
