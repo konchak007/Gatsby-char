@@ -12,9 +12,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   h1{
     color:white;
-      font-weight:bold;
-      font-size:3rem;
-      margin: 0 auto;
+    font-weight:bold;
+    font-size:3rem;
     
   }
   h2{
@@ -24,8 +23,11 @@ export const GlobalStyle = createGlobalStyle`
   }
   h3{
     font-weight:bold;
-    font-size:1.3rem;
-    
+    font-size:1.8rem;
+    font-family: Arial,sans-serif;
+  }
+  p{
+    font-weight: 400;
   }
  
 `;

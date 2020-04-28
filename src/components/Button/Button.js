@@ -13,6 +13,7 @@ const ButtonCover = styled.button`
   margin-left: 25px;
 `;
 
-const Button = ({ text, blueType }) => <ButtonCover>{text}</ButtonCover>;
-
+const Button = ({ text, blueType }) => (
+  <ButtonCover type={blueType}>{text}</ButtonCover>
+);
 export default Button;
