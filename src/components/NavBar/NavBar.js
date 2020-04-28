@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
+
+import Button from "../Button/Button";
+
 import Logo from "../Logo/Logo";
 
 const Navigation = styled.div`
@@ -20,23 +23,7 @@ const StyledLink = styled(Link)`
   font-family: Noto Sans, sans-serif;
   margin: 0 30px;
 `;
-const Button = styled.button`
-  text-transform: uppercase;
-  display: flex;
-  font-weight: bold;
-  border: solid 2px;
-  outline: none;
-  cursor: pointer;
-  padding: 7.5px 30px;
-  background-color: transparent;
-  margin: 0 25px;
-`;
-const BlueButton = styled(Button)`
-  color: white;
-  border-color: #3e7dfe;
-  background-color: #3e7dfe;
-  margin: 0;
-`;
+
 const Buttons = styled.div`
   display: flex;
 `;
@@ -50,8 +37,8 @@ const NavBar = () => (
       <StyledLink to="/">About</StyledLink>
       <StyledLink to="/">Blog</StyledLink>
       <Buttons>
-        <Button>log in</Button>
-        <BlueButton>request a demo</BlueButton>
+        <Button text="log in" />
+        <Button text="request a demo" />
       </Buttons>
     </NavLinks>
   </Navigation>
