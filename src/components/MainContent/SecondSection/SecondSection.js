@@ -6,6 +6,7 @@ import WordBlock from "../../WordBlock/WordBlock";
 const Section = styled.h2`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
   margin-top: 100px;
 `;

@@ -7,18 +7,27 @@ const NavLinks = styled.div`
 `;
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: ${(props) => props.white && "white"};
   font-family: Noto Sans, sans-serif;
   margin: 0 35px;
+  font-weight: bold;
 `;
 
-const NavBar = () => (
+const NavBar = ({ white }) => (
   <>
     <NavLinks>
-      <StyledLink to="/">Pricing</StyledLink>
-      <StyledLink to="/">Use</StyledLink>
-      <StyledLink to="/">About</StyledLink>
-      <StyledLink to="/">Blog</StyledLink>
+      <StyledLink to="/" white={white}>
+        Pricing
+      </StyledLink>
+      <StyledLink to="/" white={white}>
+        Use
+      </StyledLink>
+      <StyledLink to="/" white={white}>
+        About
+      </StyledLink>
+      <StyledLink to="/" white={white}>
+        Blog
+      </StyledLink>
     </NavLinks>
   </>
 );
