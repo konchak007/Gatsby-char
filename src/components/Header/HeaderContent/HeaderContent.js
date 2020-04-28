@@ -6,8 +6,8 @@ import headerBackground from "../../../images/header-blue.png";
 
 const Tagline = styled.div`
   display: flex;
-  height: 600px;
   align-items: center;
+  height: 600px;
 `;
 const MainTitle = styled.h1`
   width: 700px;

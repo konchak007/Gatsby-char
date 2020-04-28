@@ -11,10 +11,6 @@ const Block = styled.span`
   background-color: ${(props) => props.color};
 `;
 
-const wordBlock = ({ text, color }) => (
-  <>
-    <Block color={color}>{text}</Block>
-  </>
-);
+const wordBlock = ({ text, color }) => <Block color={color}>{text}</Block>;
 
 export default wordBlock;

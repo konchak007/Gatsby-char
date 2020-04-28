@@ -21,9 +21,10 @@ const Buttons = styled.div`
 `;
 
 const Navigation = styled.div`
+  font-weight: bold;
+
   display: flex;
   align-items: center;
-  font-weight: bold;
   @media (max-width: 920px) {
     display: none;
   }
