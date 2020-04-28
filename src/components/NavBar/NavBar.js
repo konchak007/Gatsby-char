@@ -11,6 +11,10 @@ const StyledLink = styled(Link)`
   font-family: Noto Sans, sans-serif;
   margin: 0 35px;
   font-weight: bold;
+
+  @media (max-width: 440px) {
+    margin: 0 1rem;
+  }
 `;
 
 const NavBar = ({ white }) => (

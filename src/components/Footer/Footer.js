@@ -13,20 +13,21 @@ import FooterNav from "./FooterNav/FooterNav";
 const FooterBottomBackground = styled.div`
   height: 500px;
   background: url(${footerBottomBackground});
+  background-size: cover;
+
   z-index: 1;
 `;
 const FooterUpperBackground = styled.div`
   height: 1450px;
   background-size: cover;
-  background-repeat: no-repeat;
-  background: url(${footerUpperBackground}) center;
+  background: url(${footerUpperBackground});
 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 `;
 const FooterWrapper = styled.div`
-  padding: 10% 7% 2%;
+  padding: 100px 7% 20px;
   height: 100%;
   display: flex;
   flex-direction: column;
