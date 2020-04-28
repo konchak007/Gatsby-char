@@ -5,7 +5,7 @@ import styled from "styled-components";
 import footerBottomBackground from "../../images/black.png";
 import footerUpperBackground from "../../images/ourvalues.png";
 
-import SectionOurValues from "./SectionOurValues";
+import SectionOurValues from "./OurValues/SectionOurValues";
 
 import Terms from "./Terms";
 import FooterNav from "./FooterNav/FooterNav";
@@ -35,7 +35,7 @@ const FooterWrapper = styled.div`
 
 const Footer = () => (
   <FooterUpperBackground>
-    {/* <SectionOurValues /> */}
+    <SectionOurValues />
     <FooterBottomBackground>
       <FooterWrapper>
         <FooterNav />

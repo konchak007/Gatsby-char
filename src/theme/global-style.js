@@ -29,5 +29,7 @@ export const GlobalStyle = createGlobalStyle`
   p{
     font-weight: 400;
   }
- 
+  a{
+    color:black;
+  }
 `;

@@ -1,32 +1,34 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
-import restrangle from "../../images/kolo.png"
+import restrangle from "../../../images/kolo.png";
 
 const Case = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: center;
-  font-family: ubuntu mono, sans-serif;
-`
+  align-items: center;
+
+  flex-basis: 450px;
+  max-height: 310px;
+  max-width: 450px;
+`;
 const Img = styled.img`
   width: 75px;
-  margin: 0 auto;
-`
+`;
 const Title = styled.h3`
   margin-top: 20px;
   margin-bottom: 30px;
-`
+`;
 const SubTitle = styled.div`
-  font-weight: 200;
-`
+  font-size: 1.2rem;
+`;
 
-const ValueCase = props => (
+const ValueCase = (props) => (
   <Case>
     <Img src={restrangle} />
     <Title>{props.title}</Title>
     <SubTitle>{props.subtitle}</SubTitle>
   </Case>
-)
+);
 
-export default ValueCase
+export default ValueCase;
