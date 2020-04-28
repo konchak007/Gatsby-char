@@ -2,13 +2,13 @@ import React from "react";
 
 import styled from "styled-components";
 
-import Logo from "../logo/logo";
 import footerBottomBackground from "../../images/black.png";
 import footerUpperBackground from "../../images/ourvalues.png";
-import messengers from "../../images/group.png";
 
 import SectionOurValues from "./SectionOurValues";
-import Navbar from "../NavBar/NavBar";
+
+import Terms from "./Terms";
+import FooterNav from "./FooterNav/FooterNav";
 
 const FooterBottomBackground = styled.div`
   height: 500px;
@@ -20,23 +20,25 @@ const FooterUpperBackground = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background: url(${footerUpperBackground}) center;
-`;
-const FooterWrapper = styled.div`
-  padding: 10% 7% 5%;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-end;
 `;
+const FooterWrapper = styled.div`
+  padding: 10% 7% 2%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
 const Footer = () => (
   <FooterUpperBackground>
     {/* <SectionOurValues /> */}
     <FooterBottomBackground>
       <FooterWrapper>
-        <Logo white />
-        <Navbar white />
-        <div>802 E. Whiting Street Tampa, FL 33602</div>
-        <img src={messengers} />
+        <FooterNav />
+        <Terms />
       </FooterWrapper>
     </FooterBottomBackground>
   </FooterUpperBackground>
