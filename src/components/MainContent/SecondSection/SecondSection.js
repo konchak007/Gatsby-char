@@ -8,7 +8,7 @@ const Section = styled.h2`
   justify-content: center;
   flex-wrap: wrap;
 
-  margin-top: 100px;
+  margin: 100px 0;
 `;
 const SecondSection = () => (
   <Section>

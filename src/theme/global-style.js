@@ -4,8 +4,10 @@ export const GlobalStyle = createGlobalStyle`
 
   *{
     box-sizing: border-box;
-    font-size:15px;
+    font-size:16px;
+    line-height: 1.5;
     font-family:Noto Sans,sans-serif;
+    word-spacing: 1px;
     margin:0;
     padding:0;
 
@@ -24,10 +26,12 @@ export const GlobalStyle = createGlobalStyle`
   h3{
     font-weight:bold;
     font-size:1.8rem;
-    font-family: Arial,sans-serif;
+  
   }
   p{
     font-weight: 400;
+    line-height: 1.7rem;
+    font-size: 1.125rem;
   }
   a{
     color:black;

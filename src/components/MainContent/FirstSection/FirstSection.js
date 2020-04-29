@@ -7,25 +7,29 @@ const MainBlock = styled.div`
   display: flex;
   flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   text-align: left;
-
+  justify-content: center;
   margin: 58px 0;
 `;
 const Paragraph = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   padding: 100px;
-
   background-color: #f0fcee;
+  color: #2d2d2d;
+
+  max-width: 550px;
 `;
 const ParagraphText = styled.p`
   margin-top: 45px;
 `;
+const Img = styled.img`
+  max-width: 650px;
+`;
 const FirstSection = ({ reverse }) => (
   <MainBlock reverse={reverse}>
     <div>
-      <img src={assistingWoman} width="650px" />
+      <Img src={assistingWoman} />
     </div>
     <Paragraph>
       <h3>How We Started</h3>

@@ -2,15 +2,11 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-const NavLinks = styled.div`
-  align-items: center;
-`;
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: ${(props) => props.white && "white"};
-  font-family: Noto Sans, sans-serif;
-  margin: 0 35px;
+  margin: 0 2.5rem;
   font-weight: bold;
+  color: ${(props) => props.white && "white"};
 
   @media (max-width: 440px) {
     margin: 0 1rem;
@@ -19,7 +15,7 @@ const StyledLink = styled(Link)`
 
 const NavBar = ({ white }) => (
   <>
-    <NavLinks>
+    <div>
       <StyledLink to="/" white={white}>
         Pricing
       </StyledLink>
@@ -32,7 +28,7 @@ const NavBar = ({ white }) => (
       <StyledLink to="/" white={white}>
         Blog
       </StyledLink>
-    </NavLinks>
+    </div>
   </>
 );
 

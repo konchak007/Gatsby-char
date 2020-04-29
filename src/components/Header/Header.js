@@ -25,6 +25,7 @@ const Navigation = styled.div`
 
   display: flex;
   align-items: center;
+
   @media (max-width: 920px) {
     display: none;
   }
@@ -32,19 +33,21 @@ const Navigation = styled.div`
 
 const Header = () => (
   <header>
-    <Wrapper>
-      {" "}
-      <Container>
-        <Logo />
-        <Navigation>
-          <NavBar />
-          <Buttons>
-            <Button text="log in" />
-            <Button text="request a demo" blueType />
-          </Buttons>
-        </Navigation>
-      </Container>
-    </Wrapper>
+    <nav>
+      <Wrapper>
+        {" "}
+        <Container>
+          <Logo />
+          <Navigation>
+            <NavBar />
+            <Buttons>
+              <Button text="log in" />
+              <Button text="request a demo" blueType />
+            </Buttons>
+          </Navigation>
+        </Container>
+      </Wrapper>
+    </nav>
     <HeaderContent />
   </header>
 );

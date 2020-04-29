@@ -7,6 +7,7 @@ import SecondSection from "./SecondSection/SecondSection";
 const Wrapper = styled.div`
   padding: 0 7%;
 `;
+
 const MainContent = () => (
   <main>
     <Wrapper>

@@ -34,15 +34,17 @@ const FooterWrapper = styled.div`
 `;
 
 const Footer = () => (
-  <FooterUpperBackground>
-    <SectionOurValues />
-    <FooterBottomBackground>
-      <FooterWrapper>
-        <FooterNav />
-        <Terms />
-      </FooterWrapper>
-    </FooterBottomBackground>
-  </FooterUpperBackground>
+  <footer>
+    <FooterUpperBackground>
+      <SectionOurValues />
+      <FooterBottomBackground>
+        <FooterWrapper>
+          <FooterNav />
+          <Terms />
+        </FooterWrapper>
+      </FooterBottomBackground>
+    </FooterUpperBackground>
+  </footer>
 );
 
 export default Footer;

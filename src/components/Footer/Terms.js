@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const TermsBox = styled.div`
   color: white;
+
   font-size: small;
   width: 100%;
 

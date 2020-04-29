@@ -7,7 +7,7 @@ import headerBackground from "../../../images/header-blue.png";
 const Tagline = styled.div`
   display: flex;
   align-items: center;
-  height: 600px;
+  min-height: 600px;
 `;
 const MainTitle = styled.h1`
   width: 700px;
@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 const HeaderBackground = styled.div`
   background: url(${headerBackground}) center;
   background-size: cover;
-  height: 600px;
+  height: 45vw;
 `;
 const HeaderContent = () => (
   <HeaderBackground>

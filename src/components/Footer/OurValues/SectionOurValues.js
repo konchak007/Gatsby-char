@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  text-align: center;
   color: white;
 `;
 const CasesWrapper = styled.div`
@@ -21,6 +21,10 @@ const Container = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-around;
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
 `;
 const SectionOurValues = () => (
   <Wrapper>
