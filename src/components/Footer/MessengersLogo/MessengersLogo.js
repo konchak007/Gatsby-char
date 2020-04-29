@@ -2,24 +2,27 @@ import React from "react";
 import styled from "styled-components";
 // import { graphql } from "gatsby";
 // import Img from "gatsby-image";
-import facebook from "../../../images/facebook.png";
-import instagram from "../../../images/instag.png";
-import linked from "../../../images/in.png";
+import facebook from "../../../images/facebook.svg";
+import instagram from "../../../images/insta.svg";
+import linked from "../../../images/in.svg";
+import { Link } from "gatsby";
 
-const Container = styled.div``;
+const StyledLink = styled.a`
+  padding: 8px;
+`;
 
 const MessengersLogo = () => (
-  <Container>
-    <a>
-      <img src={facebook} />
-    </a>
-    <a>
-      <img src={facebook} />
-    </a>
-    <a>
-      <img src={facebook} />
-    </a>
-  </Container>
+  <div>
+    <StyledLink as={Link} href="/">
+      <img src src={facebook} width="30px" />
+    </StyledLink>
+    <StyledLink as={Link} href="/">
+      <img src={instagram} width="30px" />
+    </StyledLink>
+    <StyledLink as={Link} href="/">
+      <img src={linked} width="30px" />
+    </StyledLink>
+  </div>
 );
 
 export default MessengersLogo;
