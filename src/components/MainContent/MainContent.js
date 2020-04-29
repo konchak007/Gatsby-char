@@ -12,8 +12,6 @@ const MainContent = () => (
   <main>
     <Wrapper>
       <FirstSection />
-      <FirstSection reverse />
-      <FirstSection />
       <SecondSection />
     </Wrapper>
   </main>

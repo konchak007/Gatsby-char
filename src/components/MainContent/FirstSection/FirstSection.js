@@ -1,45 +1,47 @@
 import React from "react";
 import styled from "styled-components";
 
-import assistingWoman from "../../../images/woman-assisting-patient-in-wheelchair.png";
+import data from "./data";
 
 const MainBlock = styled.div`
   display: flex;
-  flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
+  flex-direction: row;
   text-align: left;
   justify-content: center;
   margin: 58px 0;
+  background-color: row;
 `;
 const Paragraph = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 100px;
-  background-color: #f0fcee;
   color: #2d2d2d;
-
-  max-width: 550px;
+  width: 47%;
+  margin: 100px;
 `;
 const ParagraphText = styled.p`
   margin-top: 45px;
 `;
 const Img = styled.img`
-  max-width: 650px;
+  width: 53%;
 `;
-const FirstSection = ({ reverse }) => (
-  <MainBlock reverse={reverse}>
-    <div>
-      <Img src={assistingWoman} />
-    </div>
-    <Paragraph>
-      <h3>How We Started</h3>
-      <ParagraphText>
-        We started Chattr™ to do our part in solving the Home Healthcare
-        recruiting crisis. Sterile applications, inefficient processes and a
-        lack of transparency only compound the challenges of finding and hiring
-        top quality candidates.
-      </ParagraphText>
-    </Paragraph>
-  </MainBlock>
-);
+const FirstSection = () => {
+  return (
+    <>
+      {data.map((item) => {
+        return (
+          <section>
+            <MainBlock>
+              <Img src={item.image} />
+              <Paragraph>
+                <h3>{item.title}</h3>
+                <ParagraphText>{item.text}</ParagraphText>
+              </Paragraph>
+            </MainBlock>
+          </section>
+        );
+      })}
+    </>
+  );
+};
 export default FirstSection;
