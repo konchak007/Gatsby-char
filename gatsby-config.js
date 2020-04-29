@@ -33,7 +33,7 @@ module.exports = {
       options: {
         fonts: [
           `limelight`,
-          `source noto sans\:300,400,700`,
+          `source noto sans\:100,200,300,400,700`,
           `source sans pro\:300,400,700`, // you can also specify font weights and styles
         ],
         display: "swap",
