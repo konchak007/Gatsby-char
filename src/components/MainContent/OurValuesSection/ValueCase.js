@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import restrangle from "../../../images/kolo.png";
+import restrangle from "../../../images/kolo.svg";
 
 const Case = styled.div`
   display: flex;

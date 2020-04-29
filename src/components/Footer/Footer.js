@@ -14,7 +14,6 @@ const FooterBottomBackground = styled.div`
   background-size: cover;
 
   margin-top: -10em;
-  z-index: 1;
 `;
 
 const FooterWrapper = styled.div`

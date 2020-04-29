@@ -15,11 +15,10 @@ const Background = styled.div`
   background: url(${footerUpperBackground});
 
   background-position: top center;
-  background-size: cover;
+
   background-repeat: no-repeat;
 
-  @media (max-width: 810px) {
-    height: 100%;
+  @media (max-width: 1005px) {
   }
 `;
 
@@ -29,7 +28,10 @@ const MainContent = () => (
       <FirstSection />
       <SecondSection />
     </Wrapper>
-    {/* <Background> <OurValuesSection /> </Background> */}
+    <Background>
+      {" "}
+      <OurValuesSection />{" "}
+    </Background>
   </main>
 );
 export default MainContent;
