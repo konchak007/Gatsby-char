@@ -5,7 +5,7 @@ import styled from "styled-components";
 const StyledLink = styled.a`
   text-decoration: none;
   margin: 0 2.5rem;
-  color: ${(props) => props.white && "white"};
+  color: ${(props) => (props.white ? "white" : " #2d2d2d;")};
 
   @media (max-width: 440px) {
     margin: 0 1rem;

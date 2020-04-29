@@ -36,7 +36,7 @@ const FooterWrapper = styled.div`
 const Footer = () => (
   <footer>
     <FooterUpperBackground>
-      <SectionOurValues />
+      {/* <SectionOurValues /> */}
       <FooterBottomBackground>
         <FooterWrapper>
           <FooterNav />

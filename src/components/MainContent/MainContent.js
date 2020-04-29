@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 const MainContent = () => (
   <main>
     <Wrapper>
-      <FirstSection />
+      {/* <FirstSection /> */}
       <SecondSection />
     </Wrapper>
   </main>

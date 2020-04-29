@@ -5,31 +5,34 @@ import data from "./data";
 
 const MainBlock = styled.div`
   display: flex;
-  flex-direction: row;
   text-align: left;
   justify-content: center;
   margin: 58px 0;
-  background-color: row;
+  background-color: #f0fcee;
+  height: 30vw;
+
+  flex-direction: ${(props) => (!(props.id % 2) ? "row" : "row-reverse")};
 `;
 const Paragraph = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #2d2d2d;
-  width: 47%;
-  margin: 100px;
+  margin: 60px;
 `;
 const ParagraphText = styled.p`
-  margin-top: 45px;
+  margin-top: 25px;
 `;
-const Img = styled.img``;
+const Img = styled.img`
+  width: 54%;
+`;
 const FirstSection = () => {
   return (
     <>
-      {data.map((item) => {
+      {data.map((item, id) => {
         return (
           <section>
-            <MainBlock>
+            <MainBlock id={id}>
               <Img src={item.image} />
               <Paragraph>
                 <h3>{item.title}</h3>

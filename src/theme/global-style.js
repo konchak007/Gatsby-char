@@ -10,6 +10,9 @@ export const GlobalStyle = createGlobalStyle`
     word-spacing: 1px;
     margin:0;
     padding:0;
+    -webkit-font-smoothing: antialiased;
+    
+
 
   }
   h1{

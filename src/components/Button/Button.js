@@ -14,8 +14,8 @@ const ButtonCover = styled.button`
   margin-left: 25px;
 
   background-color: ${(props) => (props.type ? "#3E7DFE" : "transparent")};
-  color: ${(props) => (props.type ? "white" : "black")};
-  border: solid 2px ${(props) => (props.type ? "#3E7DFE" : "black")};
+  color: ${(props) => (props.type ? "white" : " #2d2d2d;")};
+  border: solid 2px ${(props) => (props.type ? "#3E7DFE" : " #2d2d2d;")};
 `;
 
 const Button = ({ text, blueType }) => (

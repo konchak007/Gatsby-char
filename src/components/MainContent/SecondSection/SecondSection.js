@@ -5,10 +5,12 @@ import WordBlock from "../../WordBlock/WordBlock";
 
 const Section = styled.h2`
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 
+  text-align: center;
   margin: 100px 0;
+  color: #2d2d2d;
 `;
 const SecondSection = () => (
   <Section>

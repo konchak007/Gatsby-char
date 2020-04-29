@@ -23,6 +23,7 @@ const HeaderBackground = styled.div`
   background: url(${headerBackground}) center;
   background-size: cover;
   height: 700px;
+
   @media (min-width: 1640px) {
     height: 40vw;
   }
