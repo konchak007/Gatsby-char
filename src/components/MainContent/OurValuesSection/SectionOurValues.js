@@ -12,6 +12,9 @@ const Wrapper = styled.div`
   @media (max-width: 1050px) {
     padding-top: 5rem;
   }
+  @media (max-width: 1220px) {
+    padding-bottom: 20rem;
+  }
 `;
 const Title = styled.h2`
   margin-bottom: 7rem;
@@ -22,6 +25,7 @@ const Container = styled.div`
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  row-gap: 5rem;
 
   @media (max-width: 710px) {
     grid-template-columns: repeat(2, 1fr);

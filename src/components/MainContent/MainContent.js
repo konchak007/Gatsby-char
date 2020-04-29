@@ -9,16 +9,15 @@ import footerUpperBackground from "../../images/ourvalues1.png";
 const Wrapper = styled.div`
   padding: 5rem 7%;
 `;
-const Background = styled.div`
+const Background = styled.section`
   height: 80vw;
 
   background: url(${footerUpperBackground});
-
-  background-position: top center;
-
+  background-size: cover;
   background-repeat: no-repeat;
 
-  @media (max-width: 1005px) {
+  @media (max-width: 1220px) {
+    height: auto;
   }
 `;
 

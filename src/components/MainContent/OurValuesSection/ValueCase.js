@@ -19,11 +19,11 @@ const SubTitle = styled.div`
   font-size: 1.2rem;
 `;
 
-const ValueCase = (props) => (
+const ValueCase = ({ title, subtitle }) => (
   <Case>
     <Img src={restrangle} />
-    <Title>{props.title}</Title>
-    <SubTitle>{props.subtitle}</SubTitle>
+    <Title>{title}</Title>
+    <SubTitle>{subtitle}</SubTitle>
   </Case>
 );
 

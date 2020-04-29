@@ -26,7 +26,7 @@ const Navigation = styled.div`
   display: flex;
   align-items: center;
 
-  @media (max-width: 920px) {
+  @media (max-width: 950px) {
     display: none;
   }
 `;
