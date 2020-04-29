@@ -7,10 +7,6 @@ const Case = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  flex-basis: 450px;
-  max-height: 310px;
-  max-width: 450px;
 `;
 const Img = styled.img`
   width: 75px;

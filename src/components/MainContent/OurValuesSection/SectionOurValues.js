@@ -4,7 +4,7 @@ import styled from "styled-components";
 import ValueCase from "./ValueCase";
 
 const Wrapper = styled.div`
-  padding: 20% 7% 5%;
+  padding: 15% 7% 5%;
   display: flex;
   flex-direction: column;
   align-items: center;

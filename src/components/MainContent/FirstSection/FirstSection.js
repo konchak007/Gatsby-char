@@ -5,26 +5,30 @@ import data from "./data";
 
 const MainBlock = styled.div`
   display: flex;
-  text-align: left;
-  justify-content: center;
-  margin: 58px 0;
-  background-color: #f0fcee;
-  height: 30vw;
+  margin: 3rem 0;
 
-  flex-direction: ${(props) => (!(props.id % 2) ? "row" : "row-reverse")};
+  @media (max-width: 1150px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 const Paragraph = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   color: #2d2d2d;
   margin: 60px;
+  width: 46%;
+
+  @media (max-width: 1150px) {
+    width: 100%;
+  }
 `;
 const ParagraphText = styled.p`
   margin-top: 25px;
 `;
 const Img = styled.img`
   width: 54%;
+  @media (max-width: 1150px) {
+    width: 100%;
+  }
 `;
 const FirstSection = () => {
   return (
