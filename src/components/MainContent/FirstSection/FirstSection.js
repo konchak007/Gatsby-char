@@ -11,14 +11,20 @@ const MainBlock = styled.div`
     flex-direction: column;
     align-items: center;
   }
+
+  background-color: ${(props) => props.backgroundColor};
+  flex-direction: ${(props) => (props.id % 2 ? "row-reverse" : "row")};
 `;
 const Paragraph = styled.div`
-  color: #2d2d2d;
-  margin: 60px;
   width: 46%;
+  color: #2d2d2d;
+  padding: 7rem 5rem;
 
   @media (max-width: 1150px) {
     width: 100%;
+  }
+  @media (max-width: 500px) {
+    padding: 2rem;
   }
 `;
 const ParagraphText = styled.p`
@@ -26,6 +32,7 @@ const ParagraphText = styled.p`
 `;
 const Img = styled.img`
   width: 54%;
+
   @media (max-width: 1150px) {
     width: 100%;
   }
@@ -35,8 +42,8 @@ const FirstSection = () => {
     <>
       {data.map((item, id) => {
         return (
-          <section>
-            <MainBlock id={id}>
+          <section key={item.title}>
+            <MainBlock id={id} backgroundColor={item.color}>
               <Img src={item.image} />
               <Paragraph>
                 <h3>{item.title}</h3>
