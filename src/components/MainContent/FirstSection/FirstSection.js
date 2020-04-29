@@ -18,7 +18,7 @@ const MainBlock = styled.div`
 const Paragraph = styled.div`
   width: 46%;
   color: #2d2d2d;
-  padding: 7rem 5rem;
+  padding: 5rem;
 
   @media (max-width: 1150px) {
     width: 100%;
