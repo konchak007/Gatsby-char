@@ -2,10 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   text-decoration: none;
   margin: 0 2.5rem;
-  font-weight: bold;
   color: ${(props) => props.white && "white"};
 
   @media (max-width: 440px) {
@@ -16,16 +15,16 @@ const StyledLink = styled(Link)`
 const NavBar = ({ white }) => (
   <>
     <div>
-      <StyledLink to="/" white={white}>
+      <StyledLink to="/" white={white} as={Link}>
         Pricing
       </StyledLink>
-      <StyledLink to="/" white={white}>
+      <StyledLink to="/" white={white} as={Link}>
         Use
       </StyledLink>
-      <StyledLink to="/" white={white}>
+      <StyledLink to="/" white={white} as={Link}>
         About
       </StyledLink>
-      <StyledLink to="/" white={white}>
+      <StyledLink to="/" white={white} as={Link}>
         Blog
       </StyledLink>
     </div>

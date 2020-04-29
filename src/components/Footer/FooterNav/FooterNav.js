@@ -22,7 +22,7 @@ const Location = styled.div`
 
 const FooterNav = () => (
   <FooterContent>
-    <Logo white />
+    <Logo white width="180px" />
     <Navbar white />
     <Location>
       802 E. Whiting Street

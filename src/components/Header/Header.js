@@ -37,7 +37,7 @@ const Header = () => (
       <Wrapper>
         {" "}
         <Container>
-          <Logo />
+          <Logo width="140px" />
           <Navigation>
             <NavBar />
             <Buttons>
