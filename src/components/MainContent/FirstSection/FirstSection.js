@@ -22,9 +22,7 @@ const Paragraph = styled.div`
 const ParagraphText = styled.p`
   margin-top: 45px;
 `;
-const Img = styled.img`
-  width: 53%;
-`;
+const Img = styled.img``;
 const FirstSection = () => {
   return (
     <>

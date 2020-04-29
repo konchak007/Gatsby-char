@@ -22,7 +22,10 @@ const Wrapper = styled.div`
 const HeaderBackground = styled.div`
   background: url(${headerBackground}) center;
   background-size: cover;
-  height: 45vw;
+  height: 700px;
+  @media (min-width: 1640px) {
+    height: 40vw;
+  }
 `;
 const HeaderContent = () => (
   <HeaderBackground>
