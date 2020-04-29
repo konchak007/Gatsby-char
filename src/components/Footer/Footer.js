@@ -13,7 +13,7 @@ const FooterBottomBackground = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
-  margin-top: -10em;
+  margin-top: -15em;
 `;
 
 const FooterWrapper = styled.div`

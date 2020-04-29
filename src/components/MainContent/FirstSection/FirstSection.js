@@ -42,7 +42,7 @@ const FirstSection = () => {
     <>
       {data.map((item, id) => {
         return (
-          <section key={item.title}>
+          <article key={item.title}>
             <MainBlock id={id} backgroundColor={item.color}>
               <Img src={item.image} />
               <Paragraph>
@@ -50,7 +50,7 @@ const FirstSection = () => {
                 <ParagraphText>{item.text}</ParagraphText>
               </Paragraph>
             </MainBlock>
-          </section>
+          </article>
         );
       })}
     </>

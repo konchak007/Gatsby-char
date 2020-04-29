@@ -6,17 +6,21 @@ import SecondSection from "./SecondSection/SecondSection";
 import OurValuesSection from "./OurValuesSection/SectionOurValues";
 import footerUpperBackground from "../../images/ourvalues1.png";
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   padding: 5rem 7%;
 `;
 const Background = styled.section`
-  height: 80vw;
+  height: 75vw;
 
-  background: url(${footerUpperBackground});
+  background: url(${footerUpperBackground}) center;
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (max-width: 1220px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1627px) {
     height: auto;
   }
 `;

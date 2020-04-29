@@ -7,16 +7,14 @@ const Wrapper = styled.div`
   padding: 0 7%;
   text-align: center;
   color: white;
-  padding-top: 10rem;
+  padding-bottom: 20rem;
 
-  @media (max-width: 1050px) {
+  @media (max-width: 620px) {
     padding-top: 5rem;
-  }
-  @media (max-width: 1220px) {
-    padding-bottom: 20rem;
   }
 `;
 const Title = styled.h2`
+  margin-top: 5rem;
   margin-bottom: 7rem;
 `;
 
@@ -25,7 +23,7 @@ const Container = styled.div`
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 5rem;
+  row-gap: 9rem;
 
   @media (max-width: 710px) {
     grid-template-columns: repeat(2, 1fr);
