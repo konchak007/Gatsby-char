@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import HeaderContent from "./HeaderContent/HeaderContent";
 import NavBar from "../NavBar/NavBar";
+import SideBarNav from "../SidebarNav/SidebarNav";
 import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
 
@@ -18,6 +19,10 @@ const Container = styled.div`
 `;
 const Buttons = styled.div`
   display: flex;
+
+  @media (max-width: 950px) {
+    display: none;
+  }
 `;
 
 const Navigation = styled.div`
@@ -25,10 +30,6 @@ const Navigation = styled.div`
 
   display: flex;
   align-items: center;
-
-  @media (max-width: 950px) {
-    display: none;
-  }
 `;
 
 const Header = () => (
@@ -45,6 +46,7 @@ const Header = () => (
               <Button text="request a demo" blueType />
             </Buttons>
           </Navigation>
+          <SideBarNav />
         </Container>
       </Wrapper>
     </nav>
