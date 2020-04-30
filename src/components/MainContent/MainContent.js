@@ -7,7 +7,7 @@ import OurValuesSection from "./OurValuesSection/SectionOurValues";
 import footerUpperBackground from "../../images/ourvalues1.png";
 
 const Wrapper = styled.section`
-  padding: 7%;
+  padding: 0 7%;
 `;
 const Background = styled.section`
   padding: 0 7%;

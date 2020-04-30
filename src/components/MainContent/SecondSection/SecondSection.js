@@ -9,7 +9,7 @@ const Section = styled.h2`
   justify-content: center;
 
   text-align: center;
-  margin-top: 10rem;
+  margin: 10rem 0;
   color: #2d2d2d;
 `;
 const SecondSection = () => (
