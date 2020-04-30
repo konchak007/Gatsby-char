@@ -6,6 +6,7 @@ import data from "./data";
 const MainBlock = styled.div`
   display: flex;
   margin: 3rem 0;
+  align-items: center;
 
   @media (max-width: 1150px) {
     flex-direction: column;

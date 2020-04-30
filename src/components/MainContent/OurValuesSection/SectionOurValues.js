@@ -54,7 +54,7 @@ const VerticalLine = styled.span`
   position: absolute;
   margin-left: 1rem;
   top: 20%;
-  left: 32%;
+  left: 31%;
   @media (max-width: 710px) {
     display: none;
   }
