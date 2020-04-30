@@ -8,7 +8,8 @@ const StyledLink = styled.div`
   text-decoration: none;
   font-weight: bold;
   color: #2d2d2d;
-  margin: 0.8rem auto;
+
+  margin: 1.1rem 0;
 `;
 const Links = styled.div`
   display: flex;
@@ -28,16 +29,16 @@ const StyledButton = styled.div`
 const NavBar = () => (
   <>
     <Links>
-      <StyledLink to="/" as={Link}>
+      <StyledLink to={"/"} as={Link}>
         Pricing
       </StyledLink>
-      <StyledLink to="/" as={Link}>
+      <StyledLink to={"/"} as={Link}>
         Use
       </StyledLink>
-      <StyledLink to="/" as={Link}>
+      <StyledLink to={"/"} as={Link}>
         About
       </StyledLink>
-      <StyledLink to="/" as={Link}>
+      <StyledLink to={"/"} as={Link}>
         Blog
       </StyledLink>
       <StyledButton>

@@ -45,8 +45,8 @@ const Header = () => (
               <Button text="log in" />
               <Button text="request a demo" theme="blue" />
             </Buttons>
+            <SideBarNav />
           </Navigation>
-          <SideBarNav />
         </Container>
       </Wrapper>
     </nav>

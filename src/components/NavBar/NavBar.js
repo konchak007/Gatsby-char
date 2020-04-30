@@ -19,16 +19,16 @@ const Links = styled.div`
 
 const NavBar = ({ theme }) => (
   <Links>
-    <StyledLink to="/" white={theme} as={Link}>
+    <StyledLink to={"/"} white={theme} as={Link}>
       Pricing
     </StyledLink>
-    <StyledLink to="/" white={theme} as={Link}>
+    <StyledLink to={"/"} white={theme} as={Link}>
       Use
     </StyledLink>
-    <StyledLink to="/" white={theme} as={Link}>
+    <StyledLink to={"/"} white={theme} as={Link}>
       About
     </StyledLink>
-    <StyledLink to="/" white={theme} as={Link}>
+    <StyledLink to={"/"} white={theme} as={Link}>
       Blog
     </StyledLink>
   </Links>
