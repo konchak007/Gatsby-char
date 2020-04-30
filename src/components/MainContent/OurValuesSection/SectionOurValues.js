@@ -41,13 +41,27 @@ const HorizontalLine = styled.span`
   background-color: white;
   position: absolute;
   margin-left: 1rem;
-  top: 45%;
+  top: 47%;
 
   @media (max-width: 710px) {
     display: none;
   }
 `;
-
+const VerticalLine = styled.span`
+  width: 1px;
+  height: 53%;
+  background-color: white;
+  position: absolute;
+  margin-left: 1rem;
+  top: 20%;
+  left: 32%;
+  @media (max-width: 710px) {
+    display: none;
+  }
+`;
+const RightVerticalLine = styled.span`
+  left: 66%;
+`;
 const SectionOurValues = () => (
   <>
     <Wrapper>
@@ -75,6 +89,8 @@ const SectionOurValues = () => (
         <ValueCase title="Virtuous" subtitle="Always do the right thing." />
       </Container>
       <HorizontalLine />
+      <VerticalLine />
+      <RightVerticalLine as={VerticalLine} />
     </Wrapper>
   </>
 );
