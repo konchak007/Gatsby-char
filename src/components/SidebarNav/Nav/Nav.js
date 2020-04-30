@@ -5,30 +5,29 @@ import styled from "styled-components";
 const StyledLink = styled.a`
   text-decoration: none;
   margin: 0 2.5rem;
-  color: ${(props) => (props.white ? "white" : " #2d2d2d;")};
+  color: #2d2d2d;
 
   @media (max-width: 440px) {
     margin: 0 1rem;
   }
 `;
 const Links = styled.div`
-  @media (max-width: 950px) {
-    display: none;
-  }
+  display: flex;
+  flex-direction: column;
 `;
 
-const NavBar = ({ theme }) => (
+const NavBar = () => (
   <Links>
-    <StyledLink to="/" white={theme} as={Link}>
+    <StyledLink to="/" as={Link}>
       Pricing
     </StyledLink>
-    <StyledLink to="/" white={theme} as={Link}>
+    <StyledLink to="/" as={Link}>
       Use
     </StyledLink>
-    <StyledLink to="/" white={theme} as={Link}>
+    <StyledLink to="/" as={Link}>
       About
     </StyledLink>
-    <StyledLink to="/" white={theme} as={Link}>
+    <StyledLink to="/" as={Link}>
       Blog
     </StyledLink>
   </Links>

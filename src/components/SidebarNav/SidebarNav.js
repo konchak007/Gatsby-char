@@ -1,6 +1,7 @@
 import React from "react";
-///import { Link } from "gatsby";
+
 import styled from "styled-components";
+import Nav from "./Nav/Nav";
 import burger from "../../images/burger.svg";
 
 const NavBar = styled.div`

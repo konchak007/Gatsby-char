@@ -3,9 +3,9 @@ import React from "react";
 import logo from "../../images/logo.svg";
 import logoWhite from "../../images/logo2.svg";
 
-const Logo = ({ white, width }) => (
+const Logo = ({ theme, width }) => (
   <a href="/">
-    <img src={`${white ? logoWhite : logo}`} width={width} alt="logo" />
+    <img src={`${theme ? logoWhite : logo}`} width={width} alt="logo" />
   </a>
 );
 

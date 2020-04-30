@@ -43,7 +43,7 @@ const Header = () => (
             <NavBar />
             <Buttons>
               <Button text="log in" />
-              <Button text="request a demo" blueType />
+              <Button text="request a demo" theme="blue" />
             </Buttons>
           </Navigation>
           <SideBarNav />

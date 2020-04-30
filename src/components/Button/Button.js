@@ -18,7 +18,7 @@ const ButtonCover = styled.button`
   border: solid 2px ${(props) => (props.type ? "#3E7DFE" : " #2d2d2d;")};
 `;
 
-const Button = ({ text, blueType }) => (
-  <ButtonCover type={blueType}>{text}</ButtonCover>
+const Button = ({ text, theme }) => (
+  <ButtonCover type={theme}>{text}</ButtonCover>
 );
 export default Button;
