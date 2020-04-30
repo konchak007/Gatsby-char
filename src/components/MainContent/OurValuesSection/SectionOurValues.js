@@ -29,9 +29,7 @@ const Container = styled.div`
   @media (max-width: 710px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width: 600px) {
-    flex-wrap: wrap;
-  }
+
   @media (max-width: 500px) {
     grid-template-columns: 1fr;
   }
@@ -42,8 +40,12 @@ const HorizontalLine = styled.span`
   height: 1px;
   background-color: white;
   position: absolute;
+  margin-left: 1rem;
+  top: 45%;
 
-  top: 47%;
+  @media (max-width: 710px) {
+    display: none;
+  }
 `;
 
 const SectionOurValues = () => (
