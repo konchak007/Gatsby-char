@@ -13,7 +13,7 @@ const StyledLink = styled.div`
 const Links = styled.div`
   display: flex;
   flex-direction: column;
-
+  align-items: center;
   background-color: white;
   position: absolute;
   top: 117px;
@@ -23,7 +23,7 @@ const Links = styled.div`
 `;
 const StyledButton = styled.div`
   display: flex;
-  margin: 1.3rem auto;
+  margin: 1.3rem 0;
 `;
 const NavBar = () => (
   <>
