@@ -12,8 +12,6 @@ export const GlobalStyle = createGlobalStyle`
     padding:0;
     -webkit-font-smoothing: antialiased;
     
-
-
   }
   h1{
     color:white;
@@ -36,7 +34,5 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.7rem;
     font-size: 1.125rem;
   }
-  a{
-    color:black;
-  }
+ 
 `;

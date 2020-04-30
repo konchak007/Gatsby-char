@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-const StyledLink = styled.a`
+const StyledLink = styled.div`
   text-decoration: none;
+  font-weight: bold;
   margin: 0 2.5rem;
   color: #2d2d2d;
 
@@ -14,6 +15,13 @@ const StyledLink = styled.a`
 const Links = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  top: 115px;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
 `;
 
 const NavBar = () => (

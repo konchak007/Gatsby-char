@@ -10,7 +10,6 @@ const Wrapper = styled.section`
   padding: 7%;
 `;
 const Background = styled.section`
-  height: 75vw;
   padding: 0 7%;
 
   background: url(${footerUpperBackground}) center;

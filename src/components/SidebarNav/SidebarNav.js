@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import styled from "styled-components";
 import Nav from "./Nav/Nav";
@@ -14,11 +14,27 @@ const NavBar = styled.div`
     display: none;
   }
 `;
+const NavContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
-const SideBarNav = () => (
-  <NavBar>
-    <img src={burger} width="30px" alt="nav-icon " />
-  </NavBar>
-);
+const Wrapper = styled.div`
+  padding: 0 7%;
+`;
+
+function SideBarNav() {
+  const [openStatus, isOpen] = useState(false);
+  return (
+    <Wrapper>
+      <NavContainer>
+        <NavBar onClick={() => isOpen(!openStatus)}>
+          <img src={burger} width="30px" alt="nav-icon " />
+        </NavBar>
+        {openStatus && <Nav />}
+      </NavContainer>
+    </Wrapper>
+  );
+}
 
 export default SideBarNav;
