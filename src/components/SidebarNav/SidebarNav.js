@@ -16,7 +16,7 @@ const NavBar = styled.div`
 
 const SideBarNav = () => (
   <NavBar>
-    <img src={burger} width="30px" />
+    <img src={burger} width="30px" alt="nav-icon" />
   </NavBar>
 );
 

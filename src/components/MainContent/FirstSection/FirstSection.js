@@ -44,7 +44,7 @@ const FirstSection = () => {
         return (
           <article key={item.title}>
             <MainBlock id={id} backgroundColor={item.color}>
-              <Img src={item.image} />
+              <Img src={item.image} alt={item.title} />
               <Paragraph>
                 <h3>{item.title}</h3>
                 <ParagraphText>{item.text}</ParagraphText>

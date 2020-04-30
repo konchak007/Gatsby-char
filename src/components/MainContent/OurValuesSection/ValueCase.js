@@ -24,7 +24,7 @@ const SubTitle = styled.div`
 
 const ValueCase = ({ title, subtitle }) => (
   <Case>
-    <Img src={restrangle} />
+    <Img src={restrangle} alt="restrangle" />
     <Title>{title}</Title>
     <SubTitle>{subtitle}</SubTitle>
   </Case>

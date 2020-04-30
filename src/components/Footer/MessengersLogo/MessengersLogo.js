@@ -14,13 +14,13 @@ const StyledLink = styled.a`
 const MessengersLogo = () => (
   <div>
     <StyledLink as={Link} href="/">
-      <img src src={facebook} width="30px" />
+      <img src src={facebook} width="30px" alt="facebook" />
     </StyledLink>
     <StyledLink as={Link} href="/">
-      <img src={instagram} width="30px" />
+      <img src={instagram} width="30px" alt="instargram" />
     </StyledLink>
     <StyledLink as={Link} href="/">
-      <img src={linked} width="30px" />
+      <img src={linked} width="30px" alt="linked-in" />
     </StyledLink>
   </div>
 );

@@ -5,7 +5,7 @@ import logoWhite from "../../images/logo2.svg";
 
 const Logo = ({ white, width }) => (
   <a href="/">
-    <img src={`${white ? logoWhite : logo}`} width={width} />
+    <img src={`${white ? logoWhite : logo}`} width={width} alt="logo" />
   </a>
 );
 

@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
 
   *{
     box-sizing: border-box;
-    font-size:16px;
+    font-size:1rem;
     line-height: 1.5;
     font-family:Noto Sans,sans-serif;
     word-spacing: 1px;
