@@ -8,7 +8,7 @@ const StyledLink = styled.div`
   text-decoration: none;
   font-weight: bold;
   color: #2d2d2d;
-  margin: 0.5rem auto;
+  margin: 0.8rem auto;
 `;
 const Links = styled.div`
   display: flex;
@@ -16,13 +16,14 @@ const Links = styled.div`
 
   background-color: white;
   position: absolute;
-  top: 115px;
+  top: 117px;
   left: 0;
 
   width: 100vw;
 `;
 const StyledButton = styled.div`
-  margin: 1rem auto;
+  display: flex;
+  margin: 1.3rem auto;
 `;
 const NavBar = () => (
   <>
@@ -41,8 +42,6 @@ const NavBar = () => (
       </StyledLink>
       <StyledButton>
         <Button text="log in" />
-      </StyledButton>
-      <StyledButton>
         <Button text="request a demo" theme="blue" />
       </StyledButton>
     </Links>

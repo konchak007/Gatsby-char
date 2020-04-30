@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-
 import styled from "styled-components";
-import burger from "../../images/burger.svg";
 
 import Nav from "./Nav/Nav";
-import Button from "../Button/Button";
+
+import burger from "../../images/burger.svg";
 
 const NavBar = styled.div`
   margin-top: 1.2rem;
