@@ -4,10 +4,9 @@ import styled from "styled-components";
 import ValueCase from "./ValueCase";
 
 const Wrapper = styled.div`
-  padding: 0 7%;
-  text-align: center;
   color: white;
   padding-bottom: 20rem;
+  position: relative;
 
   @media (max-width: 620px) {
     padding-top: 5rem;
@@ -16,6 +15,7 @@ const Wrapper = styled.div`
 const Title = styled.h2`
   margin-top: 5rem;
   margin-bottom: 7rem;
+  text-align: center;
 `;
 
 const Container = styled.div`
@@ -24,6 +24,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 9rem;
+  grid-column-gap: 2rem;
 
   @media (max-width: 710px) {
     grid-template-columns: repeat(2, 1fr);
@@ -35,32 +36,45 @@ const Container = styled.div`
     grid-template-columns: 1fr;
   }
 `;
+
+const HorizontalLine = styled.span`
+  width: 96%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+
+  top: 47%;
+`;
+
 const SectionOurValues = () => (
-  <Wrapper>
-    <Title>Our Values</Title>
-    <Container>
-      <ValueCase
-        title="Integrity"
-        subtitle="Do what you say, 100% of the time."
-      />
-      <ValueCase
-        title="Leadership"
-        subtitle="Be intuitive, empathetic and inspiring."
-      />
+  <>
+    <Wrapper>
+      <Title>Our Values</Title>
+      <Container>
+        <ValueCase
+          title="Integrity"
+          subtitle="Do what you say, 100% of the time."
+        />
+        <ValueCase
+          title="Transparency"
+          subtitle="Candid opinions, loosely held."
+        />
+        <ValueCase title="Love" subtitle="Lead with love and be nice." />
+        <ValueCase
+          title="Leadership"
+          subtitle="Be intuitive, empathetic and inspiring."
+        />
 
-      <ValueCase
-        title="Transparency"
-        subtitle="Candid opinions, loosely held."
-      />
-      <ValueCase
-        title="Communication"
-        subtitle="Chatting openly, solves every problem."
-      />
+        <ValueCase
+          title="Communication"
+          subtitle="Chatting openly, solves every problem."
+        />
 
-      <ValueCase title="Love" subtitle="Lead with love and be nice." />
-      <ValueCase title="Virtuous" subtitle="Always do the right thing." />
-    </Container>
-  </Wrapper>
+        <ValueCase title="Virtuous" subtitle="Always do the right thing." />
+      </Container>
+      <HorizontalLine />
+    </Wrapper>
+  </>
 );
 
 export default SectionOurValues;

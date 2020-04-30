@@ -7,6 +7,8 @@ const Case = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding: 0 1rem;
 `;
 const Img = styled.img`
   width: 75px;
@@ -16,7 +18,8 @@ const Title = styled.h3`
   margin-bottom: 30px;
 `;
 const SubTitle = styled.div`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  text-align: center;
 `;
 
 const ValueCase = ({ title, subtitle }) => (
