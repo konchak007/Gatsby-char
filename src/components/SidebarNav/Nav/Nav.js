@@ -24,7 +24,7 @@ const Links = styled.div`
 `;
 const StyledButton = styled.div`
   display: flex;
-  margin: 1.3rem 0;
+  margin: 1.3rem 1rem;
 `;
 const NavBar = () => (
   <>

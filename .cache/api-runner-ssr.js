@@ -9,7 +9,7 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/mac/Desktop/ch/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
-      options: {"plugins":[],"fonts":["limelight","source noto sans:300,400,700","source sans pro:300,400,700"],"display":"swap"},
+      options: {"plugins":[],"fonts":["limelight","source noto sans:100,200,300,400,700","source sans pro:300,400,700"],"display":"swap"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
